@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.dark-mode h1 {
+    font-size: xx-large;
+    font-style: normal;
+    color: red;
+}
+
+.dark-mode {
+    background-image: url("/images/bg2.jpeg");
+    background-size: cover;
+}

@@ -1,0 +1,40 @@
+{
+	"Monsters": [
+		{
+			"id": 1,
+			"name": "Zombie",
+			"X": 0,
+			"Y": 0,
+			"Show": false,
+			"Life": 20,
+			"Speed": 5
+		},
+        {
+            "id": 2,
+			"name": "Skeleton",
+			"X": 0,
+			"Y": 0,
+			"Show": false,
+			"Life": 20,
+			"Speed": 5
+        },
+        {
+            "id": 3,
+			"name": "Bat",
+			"X": 0,
+			"Y": 0,
+			"Show": false,
+			"Life": 20,
+			"Speed": 15
+        },
+        {
+            "id": 4,
+			"name": "Vampire",
+			"X": 0,
+			"Y": 0,
+			"Show": false,
+			"Life": 20,
+			"Speed": 10
+        }
+	]
+}
