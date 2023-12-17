@@ -1,0 +1,234 @@
+.blackjack-container {
+	background-image: url('/BlackJack/BackgroundBlackjack.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 600px;
+	width: 1200px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.title {
+	font-size: 3rem;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin-top: 10px;
+}
+.DealButton {
+	background-color: green;
+	color: white;
+	margin-right: 20px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.5rem;
+	border: none;
+	box-shadow: 2px 2px 2px black;
+	&:hover {
+		background-color: darkgreen;
+		cursor: pointer;
+	}
+}
+.HitButton {
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 1.5rem;
+	border: none;
+	box-shadow: 2px 2px 2px black;
+	margin-left: '50px';
+	&:hover {
+		background-color: darkgreen;
+		cursor: pointer;
+	}
+}
+.StandButton {
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 1.5rem;
+	border: none;
+	box-shadow: 2px 2px 2px black;
+	&:hover {
+		background-color: darkgreen;
+		cursor: pointer;
+	}
+}
+.DoubleButton {
+	background-color: orange;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 20px;
+	font-size: 1.5rem;
+	border: none;
+	box-shadow: 2px 2px 2px black;
+	&:hover {
+		background-color: darkgreen;
+		cursor: pointer;
+	}
+}
+.SurrenderButton {
+	background-color: purple;
+	color: white;
+	border-radius: 5px;
+	margin-right: 20px;
+	padding: 10px;
+	font-size: 1.5rem;
+	border: none;
+	box-shadow: 2px 2px 2px black;
+	&:hover {
+		background-color: darkgreen;
+		cursor: pointer;
+	}
+}
+.handContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.PlayerHand,
+.DealerHand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	margin-right: 5px;
+	height: 150px;
+}
+
+#playerTotalContainer {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+#dealerTotalContainer {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 20px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.musicButton {
+	border: 0;
+	background: transparent;
+	box-sizing: border-box;
+	width: 0;
+	height: 74px;
+
+	border-color: transparent transparent transparent #202020;
+	transition: 100ms all ease;
+	cursor: pointer;
+
+	border-style: solid;
+	border-width: 37px 0 37px 60px;
+
+	&.paused {
+		border-style: double;
+		border-width: 0px 0 0px 60px;
+	}
+
+	&:hover {
+		border-color: transparent transparent transparent #404040;
+	}
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+}
+.musicbutton {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	right: 1px;
+}
+
+.casinoMessage {
+	background-color: #ffcc00;
+	color: #000;
+	padding: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	text-align: center;
+
+	/* Nouveaux styles pour centrer la div sur le côté droit */
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #555;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+
+	input {
+		padding: 8px;
+		font-size: 14px;
+		width: 150px; /* Taille réduite */
+		border: 1px solid #444;
+		border-radius: 5px;
+		background-color: #777;
+		color: #fff;
+	}
+}
+
+label {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #fff;
+}
